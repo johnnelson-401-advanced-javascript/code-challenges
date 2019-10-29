@@ -1,4 +1,5 @@
-function insertionSort(arr) {
+function insertSort(arr) {
+  
   for(let i = 0; i < arr.length; i++) {
     if(arr[i] < arr[0]) {
       arr.unshift(arr.splice(i, 1)[0]);
@@ -15,4 +16,4 @@ function insertionSort(arr) {
   }
   return arr;
 }
-module.exports = insertionSort;
+module.exports = insertSort;
