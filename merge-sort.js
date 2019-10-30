@@ -1,3 +1,17 @@
+const mergeSort = (arr) => {
+  let n = arr.length;
+  
+  if(n < 2) {
+    return arr;
+  } else {
+    const mid = parseInt(n / 2);
+    const left = arr.slice(0, mid);
+    const right = arr.slice(mid, n);
+    mergeSort(left);
+    mergeSort(right);
+    merge(left, right, arr);
+  }
+};
 const merge = (right, left, arr) => {
   let i = 0;
   let j = 0;
@@ -20,20 +34,5 @@ const merge = (right, left, arr) => {
   }
   return arr;
 };
-const mergeSort = (arr) => {
-  let n = arr.length;
-  let result;
-  
-  if(n < 2) {
-    return arr;
-  } else {
-    const mid = parseInt(n / 2);
-    const left = arr.slice(0, mid);
-    const right = arr.slice(mid, n);
-    mergeSort(left);
-    mergeSort(right);
-    result = merge(left, right, arr);
-  }
-  return result;
-};
+
 module.exports = mergeSort;

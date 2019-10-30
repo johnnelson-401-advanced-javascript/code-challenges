@@ -75,6 +75,7 @@ This will be a recursive algorithm, and it uses multiple arrays. However it will
 * Find the middle of the array,
 * Split the array in half,
 * Take each Index and compare it against its neighbor.
+* 
 
 
 
