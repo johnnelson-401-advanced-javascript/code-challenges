@@ -75,7 +75,17 @@ This will be a recursive algorithm, and it uses multiple arrays. However it will
 * Find the middle of the array,
 * Split the array in half,
 * Take each Index and compare it against its neighbor.
-* 
 
+
+# Repeated Word Challenge
+
+Write a function that accepts a lengthy string parameter.
+Without utilizing any of the built-in library methods available to your language, return the first word to occur more than once in that provided string.
+
+* Convert the string to all lower case.
+* Remove punctuation from the string.
+* Split the string into an array of just words.
+* Create a word count for each word
+* break the loop and return if word count goes above 1. 
 
 
