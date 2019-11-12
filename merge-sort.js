@@ -26,8 +26,9 @@ function merge(right, left) {
       result.push(right[j]);
       j++;
     }
+  
+    return result.concat(left.slice(i)).concat(right.slice(j));
   }
-  return result.concat(left.slice(i)).concat(right.slice(j));
 }
 
 
